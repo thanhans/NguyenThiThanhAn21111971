@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         * {
+            box-sizing: border-box;
+            margin: auto;
+        }
+        
+        .mg-bt-16 {
+            margin-bottom: 16px;
+        }
+
+        .bai11 {
+            display: block;
+            width: 600px;
+            box-shadow: 0 0 10px rgb(0 0 0 / 70%);
+            padding: 8px;
+            margin-top: 24px;
+        }
+
+        .bai11 h2 {
+            padding: 4px 0;
+            margin: 16px 0;
+        }
+
+        .bai11 p {
+            padding-top: 4px;
+        }
+
+        .bai11__after {
+            position: relative;
+        }
+
+        .bai11__after::after {
+            position: absolute;
+            display: block;
+            content: "";
+            border-right: 2px solid #988d8d;
+            height: 21px;
+            right: 0;
+            top: -2px;
+        }
+
+        .bai11 > a {
+            padding-left: 4px;
+            padding-right: 8px;
+        }
+
+        .bai11 .last {
+            margin-bottom: 36px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bai11 mg-bt-16">
+        <img src="/CodeTuan2/img/drum.jfif" alt="drum">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet <b>consectetur adipisicing</b>  elit. Architecto enim quibusdam non provident! <i>Eius fugiat ullam</i> necessitatibus rerum, dolores deserunt nihil officia, culpa assumenda quibusdam, doloribus eum aliquid quos sint.</p>
+        <h2>Projects</h2>
+        <ul class="bai11__ul">
+            <li>
+                Featured
+                <ul class="bai11__first-ul">
+                    <li>
+                        <a href="#">School of Webcraft</a>
+                    </li>
+                    <li>
+                        <a href="https://crisiscommons.org/">Crisis Commons</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Latest
+                <ul class="bai11__second-ul">
+                    <li>
+                        <a href="https://www.linux-magazine.com/Issues/2021/242/Create-appealing-presentations-with-Inkscape-and-JessyInk">JessyInk</a>
+                    </li>
+                    <li class="last">
+                        <a href="https://privacycamp.eu/">PrivacyCamp</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <a  class="bai11__after" href="http://www.twitter.com/" title="Social Network">Twitter</a>
+        <a  class="bai11__after" href="http://www.facebook.com/" title="Social Network">Facebook</a>
+        <a href="http://www.flickr.com/" title="Social Network">Flickr</a>
+
+    </div>
+</body>
+</html>
