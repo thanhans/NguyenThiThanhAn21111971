@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: auto;
+        }
+
+        .mg-bt-8 {
+            margin-bottom: 8px;
+        }
+
+        .bai14 {
+            width: 600px;
+            height: 350px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .7);
+            margin-top: 36px;
+            margin-bottom: 36px;
+        }
+
+        h2 {
+           margin-bottom: 16px;
+           margin-left: 4px; 
+        }
+
+        .bai14 .txt {
+            margin-left: 4px; 
+            margin: 4px;
+        }
+
+        .mes {
+            position: absolute;
+            margin-top: 70px;
+        }
+
+        .box1 {
+            margin-left: 86px;
+        }
+
+        .box2 {
+            margin-left: 160px;
+        }
+
+        .box3 {
+            margin-left: 90px;
+        }
+
+        #gg {
+            width: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bai14">
+        <h2>Contact Us</h2>
+        <p class="txt">Use the following from to send a message to Example Cafe</p>
+        <div class="txt">
+            <label for="">Your email</label>
+            <input type="text" class="box1"> 
+        </div> 
+        
+        <div class="txt">
+            <label for="" class="mes">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10" class="box2"></textarea>
+        </div>
+        
+        <div class="txt">
+            How did you hear of us?
+            <select name="Google" id="gg"><option>Google</option></select>
+        </div>
+
+        <div class="txt">
+            Newsletter
+            <input type="checkbox" class="box3">
+            Ensure this box is checked if you would like to receive emial updates
+        </div>
+        <input class="txt mg-bt-8" type="submit" value="Send message"></input>
+    </div>
+</body>
+</html>
