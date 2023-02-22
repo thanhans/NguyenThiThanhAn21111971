@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: auto;
+        }
+
+        .bai16 {
+            width: 350px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .7);
+            margin-top: 48px;
+            margin-bottom: 48px;
+        }
+
+        .container {
+            margin-left: 8px;
+            padding-bottom: 4px;
+        }
+        
+        .container > p {
+            margin: 16px 0;
+            font-size: 20px;
+        }
+
+        h2 {
+            font-size: 30px;
+            margin: 16px 0;
+        }
+        
+        #goa {
+            padding-right: 30px;
+            background-color: rgb(234, 232, 232);
+            border-radius: 2px;
+            margin-bottom: 2px;
+        }
+
+        .border {
+            border-style: inset;
+            border-color: #ddd;
+            margin-bottom: 2px;
+        }
+
+        .submit {
+            margin-top: 2px;
+        }
+
+        .yes_no {
+            display: inline-block;
+            margin-right: 4px;
+        }
+
+        #input_yesno {
+            margin-right: 2px;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="bai16">
+        <div class="container">
+            <h2>Travel reservation form</h2>
+            <p><b>* denotes mandotory</b></p>
+            <form action="">
+                <div>
+                    <label for="name">Full name*:<br></label>
+                    <input class="border" type="text" id="name" placeholder="Firstname LastName">
+                </div>
+    
+                <div>
+                    <label for="email">Email address*:<br></label>
+                    <input class="border" type="text" id="email" placeholder="EMAIL_ADDRESS">
+                </div>
+    
+                <div>
+                    <label for="goa">Select Tour Package* :<br></label>
+                    <select name="goa" id="goa"><option>Goa</option></select>
+                </div>
+    
+                <div>
+                    <label for="date">Arrival date*:<br></label>
+                    <input class="border" type="text" id="date" placeholder="m/d/y">          
+                </div>
+    
+                <div>
+                    <label for="number">Number of persons*:<br></label>
+                    <input class="border" type="text" id="number" placeholder="UNKNOWN_TYPE">          
+                </div>
+                
+                <div>
+                    <p>What would you want to avail?*</p>
+                    <p>Boarding
+                        <input type="checkbox">
+                    </p>
+    
+                    <p>Fooding
+                        <input type="checkbox">
+                    </p>
+    
+                    <p>Sight seeing
+                        <input type="checkbox">
+                    </p>
+                </div>
+    
+                <div>
+                    <label for="discout">Discout Coupon code:<br></label>
+                    <input class="border" type="text" id="discout" placeholder="UNKNOWN_TYPE">          
+                </div>
+    
+                <div>
+                    <label for="condition">Terms and conditions* <br></label>
+                    <p class="yes_no"><input id="input_yesno" type="radio" >I agree</p>
+                    <p class="yes_no"><input id="input_yesno" type="radio">I disagree</p>
+                </div>
+    
+                <input class="submit" type="submit" value="Complete reservation"></input>
+    
+            </form>
+
+        </div>
+    </div>
+</body>
+</html>
