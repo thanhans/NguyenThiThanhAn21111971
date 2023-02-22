@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: auto;
+        }
+        
+        .mg-bt-16 {
+            margin-bottom: 16px;
+        }
+
+        .bai6a {
+            width: 620px;
+            height: 500px;
+            background-color: #d9d9a2;
+            text-align: center;
+            box-shadow: 0 0 10px rgb(0 0 0 / 70%);
+            padding-top: 10px;
+            margin-top: 16px;
+        }
+
+        .bai6a table {
+            width: 580px;
+            height: 480px;
+        }
+
+        .bai6b {
+            display: flex;
+            align-items: end;
+            justify-content: space-between;
+        }
+
+        .bai6b > table > tr > td > a {
+            color: red;
+        }
+
+        .bai6b3 {
+            background-color: #ffd078;
+        }
+        
+        .bai6b_1 {
+            width: 175px;
+            height: 150px;
+            box-shadow: 0 0 10px;
+            margin-bottom: 0;
+        }
+
+        .bai6b_1 > table {
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            margin-left: 3px;
+        }
+
+        .bai6b_2 {
+            width: 200px;
+            height: 150px;
+            box-shadow: 0 0 10px;
+            margin-bottom: 0px;
+        }
+
+        .bai6b_1 p, .bai6b_2 p {
+            margin-bottom: 8px;
+        }
+
+        .bai6b_2 > table {
+            width: 120px;
+            height: 90px;
+            text-align: center;
+            margin-left: 3px;
+        }
+
+        .bai6c {
+            width: 450px;
+            height: 170px;
+            margin-bottom: 30px;
+            box-shadow: 0 0 10px;
+            background-color: #ffd078;
+            text-align: center;
+        }
+
+        .bai6c > table {
+            background-color: rgb(237, 146, 219);
+        }
+
+        .bai6c table td:nth-child(2n) {
+            padding: 0 15px;
+        }
+
+        .bai6c table tr:nth-child(n+1) {
+            background-color: rgb(250, 234, 248);
+            color: rgb(104, 110, 219);
+        }
+
+        .bai6c table tr:nth-child(1) {
+            background-color: rgb(246, 124, 232);
+        }
+
+        .bai6c table td:first-child {
+            background-color: rgb(150, 182, 249);
+            color: black;
+            padding: 0 7px;
+        }
+        
+    </style>
+</head>
+<body>
+       <div class="bai6a mg-bt-16">
+        <table border = "1">
+            <tr>
+                <td style="background-color: #fff;">1</td>
+                <td colspan="4" style="background-color: #fff;">2</td>
+            </tr>
+
+            <tr>
+                <td rowspan="3" style="background-color: #fff;">3</td>
+                <td style="background-color: orange;">4</td>
+                <td style="background-color: orange;">5</td>
+                <td colspan="2" rowspan="2" style="background-color: yellow;">6</td>
+            </tr>
+
+            <tr>
+                <td style="background-color: orange;">7</td>
+                <td style="background-color: orange;">8</td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="background-color: yellow;">9</td>
+                <td colspan="2" style="background-color: yellow;">10</td>
+            </tr>
+
+        </table>
+    </div>
+
+    <div class="bai6b mg-bt-16">
+        <div class="bai6b3">
+            <table border="1">
+                <tr>
+                    <td>(1)</td>
+                    <td>(2)</td>
+                    <td>(3)</td>
+                    <td colspan="3">(4)</td>
+                    <td>(5)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="5"><a style="color: red;" href="">Part I</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                    <td colspan="4"><a style="color: red" ; href="">Chapter 1</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="3"></td>
+                    <td colspan="3"><a style="color: red" ; href="">SectionA</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="3"></td>
+                    <td colspan="3"><a style="color: red" ; href="">SectionB</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                    <td colspan="4"><a style="color: red" ; href="">Chapter 2</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="3"></td>
+                    <td colspan="3"><a style="color: red" ; href="">SectionA</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="3"></td>
+                    <td colspan="3"><a style="color: red" ; href="">SectionB</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="5"><a style="color: red" ; href="">Part II</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                    <td colspan="4"><a style="color: red" ; href="">Chapter 1</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="3"></td>
+                    <td colspan="3"><a style="color: red" ; href="">SectionA</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="3"></td>
+                    <td colspan="3"><a style="color: red" ; href="">SectionB</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                    <td colspan="4"><a style="color: red" ; href="">Chapter 2</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="3"></td>
+                    <td colspan="3"><a style="color: red" ; href="">SectionA</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="3"></td>
+                    <td colspan="3"><a style="color: red" ; href="">SectionB</a></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="bai6b_1">
+            <p><b>With cellpadding:</b></p>
+            <table border="1">
+                <tr>
+                    <td style="padding: 15px;">6.470</td>
+                    <td style="padding: 15px;">6.470</td>
+                </tr>
+                <tr>
+                    <td style="padding: 15px;">6.470</td>
+                    <td style="padding: 15px;">6.470</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="bai6b_2">
+            <p><b>Table with spanning row:</b></p>
+            <table border="1">
+                <tr>
+                    <td>6.470</td>
+                    <td>6.470</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">6.470</td>
+                    <td>6.470</td>
+                </tr>
+                <tr>
+                    <td>6.470</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="bai6c mg-bt-16">
+        <table border="1">
+            <caption><b style="color: rgb(226, 43, 198);">NUMBERS 1-5 in VARIOUS LANGUAGES</b></caption>
+            <tr>
+                <td style="background-color: white;"></td>
+                <td><a href="">English</a></td>
+                <td><a href="">Espanol</a></td>
+                <td><a href="">Francais</a></td>
+                <td><a href="">Italiano</a></td>
+                <td><a href="">Deutsch</a></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>one</td>
+                <td>uno</td>
+                <td>un</td>
+                <td>uno</td>
+                <td>eins</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>two</td>
+                <td>dos</td>
+                <td>deux</td>
+                <td>due</td>
+                <td>zwei</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>three</td>
+                <td>tres</td>
+                <td>trois</td>
+                <td>tre</td>
+                <td>drei</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>four</td>
+                <td>cuatro</td>
+                <td>quatre</td>
+                <td>quattro</td>
+                <td>vier</td>
+
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>five</td>
+                <td>cinco</td>
+                <td>cinq</td>
+                <td>cinque</td>
+                <td>funf</td>
+            </tr>
+        </table>
+    </div>
+
+
+</body>
+</html>

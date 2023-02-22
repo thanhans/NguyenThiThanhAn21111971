@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: auto;
+        }
+
+        .bai5a {
+            box-shadow: 0 0 10px rgb(0 0 0 / 70%);
+            width: 300px;
+            padding-left: 10px;
+        }
+
+        .bai5a__after {
+            position: relative;
+        }
+
+        .bai5a__after::after {
+            position: absolute;
+            display: block;
+            content: "";
+            border-right: 2px solid #ddd;
+            height: 16px;
+            right: 0;
+            top: 3px;
+        }
+
+        .bai5a a {
+            padding-right: 8px;
+        }
+
+        .bai5a span {
+            display: block;
+            margin-top: 16px;
+            padding: 8px;
+        }
+
+        .bai5a h2 {
+            margin-top: 16px;
+        }
+
+        .bai5a ul, .bai5a h2 {
+            margin-bottom: 16px;
+        }
+
+        .bai5b {
+            margin-top: 16px;
+            box-shadow: 0 0 10px rgb(0 0 0 / 70%);
+            width: 500px;
+            padding-left: 10px;
+            margin-bottom: 16px;
+        }
+
+        .bai5b h2, ul, p {
+            margin-bottom: 16px;
+        }
+
+        .bai5b > a, .bai5b span {
+            display: inline-block;
+        }
+    </style>
+<body>
+        <div class="bai5a">
+        <h2>Example Cafe Menu</h2>
+        <a href="#" class="bai5a__after">Starters</a>
+
+        <a href="#" class="bai5a__after">Main Courses</a>
+
+        <a href="#">Desserts</a>
+        <h2>Starters</h2>
+        <ul>
+            <li>Chestnut and Mushroom Goujons</li>
+            <li>Goat Cheese Salad</li>
+            <li>Honey Soy Chicken Kebabs</li>
+            <li>Seafood Salad</li>
+        </ul>
+        <a href="#">Back to top</a>
+        <h2>Main courses</h2>
+        <ul>
+            <li>
+                Spinach and Ricotta Roulade
+                (<a href="#">v</a>)
+            </li>
+            <li>Beef Tournados with Mustard and Dill Sauce</li>
+            <li>Roast Chicken Salad</li>
+            <li>Icelandic Cod with Parsley Sauce</li>
+            <li>
+                Mushroom Wellington
+                (<a href="#">v</a>)
+            </li>
+        </ul>
+        <a href="#">Back to top</a>
+        <h2>Desserts</h2>
+
+        <ul>
+            <li>
+                Lemon Sorbet
+                (<a href="#">v</a>)
+            </li>
+            <li>
+                Chocolate Mud Pie
+                (<a href="#">v</a>)
+            </li>
+            <li>
+                Pecen Pie
+                (<a href="#">v</a>)
+            </li>
+            <li>Selection of Fine Cheeses from Aroundthe World</li>
+        </ul>
+        <a href="#">Back to top</a>
+        <span>Items marked with a (v) are suitable for vegetarians</span>
+    </div>
+
+    <div class="bai5b">
+        <h2>Linking and Naviga tion</h2> 
+        <span>This page cover the following topics:</span>
+        <ul>
+            <li><a href="#">URLs</a></li>
+            <li><a href="#">Source Anchors</a></li>
+            <li><a href="#">Destination Anchors</a></li>
+            <li><a href="#">Examples</a></li>
+        </ul>
+        <h2>URLs</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia repudiandae maiores voluptates minus omnis obcaecati sint molestiae temporibus laboriosam! Dolore dignissimos facere ad dicta labore provident sint voluptas illo distinctio?
+        Placeat temporibus, ipsum obcaecati deleniti porro odit perferendis cupiditate esse quidem maiores laboriosam molestias, fuga quisquam nam suscipit et iusto. Nam magnam blanditiis, assumenda dicta maxime ea alias velit eum!</p>
+        <a href="#">Back to top</a>
+        <h2>Source Anchors</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, blanditiis nam? Maiores ipsum consectetur exercitationem eveniet rem sequi officia, nostrum quam molestias laudantium accusantium iure quis illo harum, sint provident?
+        Expedita, dolores. Velit eum non aliquam vero, praesentium alias veritatis nostrum, modi aliquid, ea magnam doloribus quo ipsa! Ullam autem saepe soluta nobis magnam veritatis. Hic nihil voluptatum totam esse.</p>
+        <a href="#">Back to top</a>
+    </div>
+
+</body>
+</html>
