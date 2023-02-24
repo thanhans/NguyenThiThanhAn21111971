@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .bai17a {
+            margin: auto;
+            width: 650px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .7);
+            background-color: #ffd078;
+            margin-top: 48px;
+            margin-bottom: 48px;
+            
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        .form_a {
+            margin: 8px;
+
+        }
+
+        .form_a > div {
+            margin-left: 16px;
+        }
+
+        .one > label {
+            display: block;
+        }
+
+        .inform, .text_one, .text_three, .text_four,
+        .yes_no {
+            margin-left: 16px;
+        }
+
+        .inform {
+            margin-top: -16px;
+        }
+
+        .text_four, .text_three {
+            margin-top: -10px;
+        }
+
+        .four > p, .five > p, .six > p,.seven > p {
+            margin-bottom: 0;
+        }
+
+        .yes_no {
+            display: inline-block;
+            margin-top: 0;
+        }
+
+        .chose {
+            margin-top: 0;
+        }
+
+        .text_six {
+            display: inline-block;
+        }
+
+        .eight {
+            margin-top: 24px;
+            padding-bottom: 8px;
+            text-align: center;
+        }
+
+        #send {
+            margin-right:24px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="bai17a">
+        <form action="" class="form_a">
+            <h3>Survey Form</h3>
+            <p>If you are interested in purchasing one or more of our products, before ordering please complete some or all of the following survey for our marketing department. Answering any question is optional, and all information will be kept strictly confidential. Thank you very much for your time!</p>
+           
+            <div class="one">
+                <label for="input_one">1. What is your name?</label>
+                <input type="text" class="text_one" size="30">
+            </div>
+
+            <div class="two">
+                <p>2. What is your date of birth?</p>
+                <div class="inform">
+                    <label for="month">Month: </label>
+                    <select name="Month" id="month">
+                        <option>January</option>
+                        <option>February</option>
+                        <option>March</option>
+                        <option>April</option>
+                        <option>May</option>
+                        <option>June</option>
+                        <option>July</option>
+                        <option>August</option>
+                        <option>September</option>
+                        <option>October</option>
+                        <option>November</option>
+                        <option>December</option>
+                    </select>
+    
+                    <label for="date">Date: </label>
+                    <select name="Date" id="date">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+                    </select>
+    
+                    <label for="year">Year: </label>
+                    <input type="text" id="year" size="2">
+                </div>
+            </div>
+
+            <div class="three">
+                <p>3. What is your mailing address (if you would like to have a hard copy of our catalog sent to you)?</p>
+                <textarea name="" class="text_three" cols="50" rows="5">Number /P.O. Box/Route:
+Street/Avenue/Road:
+City:
+State/Zip:
+                </textarea>
+            </div>
+
+            <div class="four">
+                <p>4. What is your email address?</p>
+                <input type="text" class="text_four">
+            </div>
+
+            <div class="five">
+                <p>5. Have you viewed our online product catalog?</p>
+                <p class="yes_no"><input id="input_yesno" type="radio" >Yes</p>
+                <p class="yes_no"><input id="input_yesno" type="radio" >No</p>
+            </div>
+
+            <div class="six">
+                <p>6. If so, what product(s), besides the one you are ordering, might you be interested in purchasing in the future? (Check all that apply.)</p>
+                <p class="chose"><input type="checkbox">VCR</p>
+                <p class="chose"><input type="checkbox">Big Screen TV</p>
+                <p class="chose"><input type="checkbox">Audio Equipment</p>
+                <p class="chose"><input type="checkbox">Video Equipment</p>
+                <p class="chose"><input type="checkbox">Camera Equipment</p>
+                <p class="chose text_six"><input type="checkbox">Other</p>
+                <input type="text" name="" id="" value="Please List" size="30">
+            </div>
+
+            <div class="seven">
+                <p>7. Do you have any question, comments or suggestions before proceeding to the Order Form?</p>
+                <textarea name="" id="" cols="40" rows="6">Your Input: </textarea>
+            </div>
+
+            <div class="eight">
+                <button id="send">Send Form</button>
+                <button id="clear">Clear Form</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
