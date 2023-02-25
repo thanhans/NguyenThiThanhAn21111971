@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .bai17b {
+            margin: auto;
+            width: 450px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .7);
+            margin-top: 48px;
+            margin-bottom: 48px;           
+        }
+
+        .form_b {
+            margin: 8px;
+            padding-top: 8px;
+        }
+
+        #input_one {
+            padding-right: 130px;
+        }
+
+        #input_three {
+            padding-right: 20px;
+        }
+
+        .bai17b div {
+            margin-bottom: 16px;
+        }
+
+        .bai17b p {
+            padding-bottom: 10px;
+        }
+
+        .four input:first-child {
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bai17b">
+        <form action="" class="form_b">
+            <div class="">
+                <label for="input_one">Browser:</label>
+                <select name="" id="input_one"></select>
+            </div>
+
+            <div>
+                <label for="">Username:</label>
+                <input type="text">
+            </div>
+
+            <div>
+                <label for="input_three">Encryption:</label>
+                <select name="" id="input_three"><option> 2048 (High Grade) </option></select>
+            </div>
+
+            <div class="four">
+                0<input type="range" >100<br>
+                <input type="text" value="50">
+            </div>
+
+            <div>
+                <label for="">Birthday:</label>
+                <input type="date">
+            </div>
+
+            <div>
+                <label for="">Select your favourite color:</label>
+                <input type="color">
+            </div>
+
+            <div>
+                <label for="">Birthday (month and year):</label>
+                <input type="month">
+            </div>
+
+            <div>
+                <label for="">Select a week:</label>
+                <input type="week">
+            </div>
+
+            <div>
+                <label for="">Select a time:</label>
+                <input type="time">
+            </div>
+
+            <div>
+                <label for="">Birthday (date and time):</label>
+                <input type="text">
+            </div>
+
+            <div>
+                <label for="">E-mail:</label>
+                <input type="email">
+            </div>
+
+            <div>
+                <label for="">Search Google:</label>
+                <input type="text">
+            </div>
+
+            <div>
+                <label for="">Telephone:</label>
+                <input type="text">
+            </div>
+
+            <div>
+                <label for="">Add your homepaage:</label>
+                <input type="text">
+            </div>
+
+            <button>Submit</button>
+            <p><b>Note:</b>The datalist tag is not supported in Safari or IE9 (and earlier).</p>
+        </form>
+    </div>
+</body>
+</html>
