@@ -1,0 +1,42 @@
+.one {
+    text-indent: 1cm;
+    color: red;
+    text-align: justify;
+}
+
+.two {
+    text-align: right;
+    color: blue;
+}
+
+.three {
+    text-align: center;
+    color: green;
+}
+
+.four {
+    text-align: left;
+    color: brown;
+}
+
+.five {
+    text-decoration: underline;
+    color: pink;
+}
+
+.six {
+    text-decoration: line-through;
+    color: purple;
+}
+
+.seven {
+    text-decoration: overline;
+    color: red;
+}
+
+.eight {
+    text-decoration: blink;
+    text-align: justify;
+    color: blue;
+    text-shadow: 4px 4px 8px blue;
+}
