@@ -1,0 +1,104 @@
+.font_weight {
+    font-weight: 900;
+}
+
+body {
+    box-shadow: 0 0 10px rgb(0 0 0 / 70%);
+    width: 400px;
+    height: 104px;
+}
+
+.container {
+    position: relative;
+    width: 392px;
+    margin-left: 4px;
+    padding-top: 4px;
+}
+
+.top {
+    border: 1px solid purple;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2px;
+}
+
+.top1 {
+    position: absolute;
+}
+
+.top2 {
+    margin-top: 20px;
+
+}
+
+.top1 p {
+    display: inline-flex;
+    margin: 8px 16px;
+
+}
+
+.top2 p {
+    margin-bottom: 8px;
+    display: inline-flex;
+    margin-left: 36px;
+}
+
+.s1 {
+    color: #000;
+    text-shadow: -1px -3px palevioletred, 1px 3px green;
+}
+
+.s2 {
+    color: purple;
+    background-color: pink;
+    padding-left: 8px;
+    padding-right: 4px;
+}
+
+.s3 {
+    
+    text-shadow: 0 0 8px #FFFFFF, 1px -7px 0.5px #CE1899;
+}
+
+.s4 {
+    text-shadow: 0 -1px 4px #FFF, 0 -10px 20px #ff8000, -7px -2px 9px #FFF417;
+    color: #FFAE13;
+}
+
+.s5 {
+    color: rgb(152, 35, 35);
+    background-color: #000;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.s6 {
+    color: rgb(52, 34, 188);
+    background-color: #000;
+    animation: glow 1s ease-in-out infinite alternate;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #3f12d6, 0 0 40px #3f12d6, 0 0 50px #3f12d6, 0 0 60px #3f12d6, 0 0 70px #3f12d6;
+    }   
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #2d88d8, 0 0 40px #2d88d8, 0 0 50px #2d88d8, 0 0 60px #2d88d8, 0 0 70px #2d88d8, 0 0 80px #2d88d8;
+    }
+  }
+
+.bottom {
+    color: #fff;
+    background-color: purple;
+    text-align: center;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.bottom p {
+    margin: 0;
+
+}
