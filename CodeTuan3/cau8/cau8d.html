@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            box-shadow: 0 0 10px rgb(0 0 0 / 70%);
+            width: 800px;
+            margin-left: 30px;
+            margin: auto;
+        }
+
+        .cau8c {
+            margin: 8px;
+            padding-bottom: 8px;
+        }
+
+        .solic, .blue, .red {
+            display: inline-block;
+            margin: 4px;
+
+        }
+
+        .solid {
+            color: rgb(119, 114, 114);
+            font-weight: 600;
+            display: inline-block;
+            margin: 4px;
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        .red {
+            color: red;
+        }
+
+        
+        .cau8c .p {
+            color: rgb(151, 145, 145);
+            line-height: 25px;
+            margin-top: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .box1 {
+            color: rgb(107, 106, 106);
+            background-color: rgb(240, 240, 240);
+            display: inline-block;
+        }
+        
+        .box1 p {
+            padding: 0 16px;
+            margin-top: 4px;
+            margin-bottom: 4px;
+            font-size: 14px;
+            line-height: 25px;
+        }
+        
+        .box2 {
+            display: inline-block;
+            font-size: 14px;
+            width: 300px;
+            
+        }
+        
+        .box2 div p {
+            float: right;
+            margin: 2px;
+            line-height: 20px;
+        }
+
+        .border  {
+            border-top: 10px solid #85C226;
+            border-right: 10px solid #F7C200;
+            border-bottom: 10px solid #4493A0;
+            border-left: 10px solid #DF127B;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 70px;
+            border-bottom-left-radius: 20px;
+
+            text-align: center;
+            margin-top: 16px;
+            font-size: 14px;
+            line-height: 25px;
+        }
+        </style>
+</head>
+<body>
+    <div class="cau8c">
+        <h2 style="color: rgb(81, 79, 79);"><b>Border Radius</b></h2>
+        <div id="color">
+            <p class="solid">Sytax: </p>
+            <p class="blue">border-radius: </p>
+            <p class="red">(top-left) (top-right) (bottom-right) (bottom-left);</p>
+        </div>
+
+        
+        <div id="color">
+            <p class="solid">Example: </p>
+            <p class="blue">border-radius: </p>
+            <p class="red">0px 30px 70px 20px;</p>
+        </div>
+        
+        <div class="p">
+            For displaying round corners Border Radius property is used.
+            <br>IE9 and Opera use the same code. For Firefox a prefix 
+            <p style="color: green; display: inline-flex; margin: 0;"><b>"-moz-"</b></p>
+            need to be added the code. And for Webkit Browesrs 
+            <p style="color: green; display: inline-flex; margin-top: 0;"><b>"-webkit-"</b></p>
+            needs to be added before the code.
+            <br>Box-shadow property for all the browesrs.
+        </div>
+
+        <div class="box">
+            <div class="box1">
+                <p>
+                    <b>
+                        For IE and Opera
+                        <br>For Mozilla Firefox
+                        <br>For Webkit Browsers              
+                    </b>
+
+                </p>
+            </div>
+
+            <div class="box2">
+                <div>
+                    <p class="red">0px 30px 70px 20px;</p>
+                    <p class="blue">box-shadow:</p>
+                </div>
+                <div>
+                    <p class="red">0px 30px 70px 20px;</p>
+                    <p class="blue">-moz-box-shadow:</p>
+                </div>
+                <div>
+                    <p class="red">0px 30px 70px 20px;</p>
+                    <p class="blue">-webkit-box-shadow:</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="border">
+            <p class="solid">
+                No Border radius (0px) has been applied on the top-left (green-pink) corner.
+                <br>Border radius (30px) has been applied on the top-right (green-yellow) corner.
+                <br>Border radius (70px) has been applied on the bottom-right (blue-yellow) corner.
+                <br>Border radius (20px) has been applied on the bottom-left (blue-pink) corner.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
