@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            box-shadow: 0 0 10px rgb(0 0 0 / 70%);
+            width: 500px;
+            margin-left: 30px;
+            margin: auto;
+        }
+
+        .cau8b {
+            margin: 8px;
+            padding-bottom: 8px;
+        }
+
+        .solid, .blue, .red {
+            display: inline-block;
+            margin: 2px;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+
+        .solid, p {
+            color: rgb(119, 114, 114);
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .border  {
+            border-top: 10px solid #85C226;
+            border-right: 10px dotted #F7C200;
+            border-bottom: 10px groove #4493A0;
+            border-left: 10px double #DF127B;
+            text-align: center;
+            margin-top: 16px;
+            font-size: 14px;
+            line-height: 25px;
+        }
+
+        .important {
+            color: #fff;
+            background-color: red;
+            display: inline-block;
+            padding: 0 8px;
+            font-weight: 600;
+        }
+
+        h2 {
+            display: inline;
+            padding-right: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cau8b">
+        <h2 style="color: rgb(81, 79, 79);"><b>Border Styles</b></h2>
+        <div class="important">Important</div>
+        <p>This property must be used if you are using any of the Border properties.<br>Without using this border-style property you won't see any borders at all.</p>
+        <div id="color">
+            <p class="solid">Sytax: </p>
+            <p class="blue">border-color: </p>
+            <p class="red">(top) (right) (bottom) (left);</p>
+        </div>
+
+        <div id="color">
+            <p class="solid">Example: </p>
+            <p class="blue">border-color: </p>
+            <p class="red">sloid dotted groove double;</p>
+        </div>
+
+        <div class="border">
+            <p class="solid"><b>
+                Here the top border (green) has a solid style, 
+                <br> right (yellow) one has dotted,
+                <br> bottom (blue) one has groove and
+                <br> the left (pink) one has the double style.</b>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
