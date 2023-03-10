@@ -36,11 +36,11 @@
 .green {
     color: #458D7A;
 }
-
+/* 
 body {
     background-color:antiquewhite;
 
-}
+} */
 
 .main {
     width: 80%;
@@ -50,6 +50,7 @@ body {
 .h1 {
     display: block;
     color: #323842;
+    margin-bottom: 20px;
 }
 
 /* NAV */
@@ -201,11 +202,81 @@ body {
 }
 
 /* REVIEWS */
+.reviews {
+    background-color: #FAFAFB;
+    padding: 20px 0;
+    width: 98%;
+    margin-left: 1%;
+}
 
-.name {
+.review_name {
     display: flex;
     justify-content: space-between;
 }
 
+.review_one {
+    display: flex;
+}
 
+.review_two span {
+    margin-top: 5px;
+    margin-right: 4px;
+}
 
+.star_line {
+    margin: 0 8px;
+}
+
+.review_two {
+   display: flex; 
+}
+
+.review_right_top1 {
+    display: flex;
+}
+
+.img_user img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.left_right_reviews {
+    display: flex;
+}
+
+.reviews_left {
+    width: 40%;
+}
+
+.reviews_right {
+    width: 55%;
+}
+
+.count {
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.count button {
+    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+    border-color: green;
+}
+
+.count p {
+    padding-top: 6px;
+}
+
+#two {
+    text-align: center;
+
+}
+
+#chamcham {
+    line-height: 12px;
+}
