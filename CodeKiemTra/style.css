@@ -243,6 +243,10 @@
 
 .reviews_left {
     width: 40%;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .reviews_right {
@@ -280,7 +284,6 @@
 .faqs {
     width: 80%;
     margin-left: 10%;
-    padding-bottom: 400px;
 }
 
 .faqs_lr {
@@ -316,3 +319,17 @@
     margin-top: 10px;
     margin-right: 8px;
 }
+
+/* FOOTER */
+.footer {
+    width: 98%;
+    margin-left: 1%;
+    color: #ddd;
+    background-color: #1D2128;
+}
+
+.footer_lr {
+    display: flex;
+    justify-content: space-around;
+}
+
