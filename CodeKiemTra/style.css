@@ -5,6 +5,11 @@
     font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
 }
 
+.flex_row {
+    display: flex;
+    flex-direction: row;
+}
+
 .grey {
     color: #94979D;
 }
@@ -36,11 +41,6 @@
 .green {
     color: #458D7A;
 }
-/* 
-body {
-    background-color:antiquewhite;
-
-} */
 
 .main {
     width: 80%;
@@ -209,6 +209,10 @@ body {
     margin-left: 1%;
 }
 
+.write_review {
+    background-color: #FAFAFB;
+}
+
 .review_name {
     display: flex;
     justify-content: space-between;
@@ -227,22 +231,14 @@ body {
     margin: 0 8px;
 }
 
-.review_two {
+.review_two, .review_right_top1, .left_right_reviews {
    display: flex; 
-}
-
-.review_right_top1 {
-    display: flex;
 }
 
 .img_user img {
     width: 50px;
     height: 50px;
     margin-right: 10px;
-}
-
-.left_right_reviews {
-    display: flex;
 }
 
 .reviews_left {
@@ -274,9 +270,49 @@ body {
 
 #two {
     text-align: center;
-
 }
 
 #chamcham {
     line-height: 12px;
+}
+
+/* FAQs */
+.faqs {
+    width: 80%;
+    margin-left: 10%;
+    padding-bottom: 400px;
+}
+
+.faqs_lr {
+    display: flex;
+    color: grey;
+    justify-content: space-evenly;
+}
+
+.faqs_left, .faqs_right {
+    width: 48%;
+    height: 300px;
+}
+
+#faqs_left_one, #faqs_right_one {
+    border: 1px solid grey;
+    border-radius: 4px;
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#faqs_left_one:first-child {
+    flex-direction: column;
+}
+
+#faqs_left_one p, #faqs_right_one p {
+    margin: 10px;
+}
+
+#faqs_right_one img, #faqs_left_one img {
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-right: 8px;
 }
