@@ -94,7 +94,7 @@
 
 /* PRODUCT NAME */
 .product_name {
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 .product_name_lr {
@@ -110,7 +110,7 @@
 }
 
 .product_left {
-
+    height: 530px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -123,6 +123,7 @@
     width: 90px;
     height: 27px;
     text-align: center;
+    font-size: 15px;
     border-radius: 18px;
     padding-top: 3px;
     top: 10px;
@@ -142,6 +143,7 @@
   
 #product_name_right {
     width: 50%;
+    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -247,6 +249,10 @@
     display: flex;
 }
 
+.product {
+    position: relative;
+}
+
 /* LIST MAIN */
 .list_main {
     color: green;
@@ -320,8 +326,33 @@
 }
 
 /* HOW TO USE */
+.how_to_use {
+    position: relative;
+}
+
 .howto {
     width: 100%;
+}
+
+.watch_video button {
+    background-color: #333;
+    color: #fff;
+    width: 175px;
+    height: 50px;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    right: 40%;
+    padding-right: 8px;
+}
+
+.watch_video img {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    z-index: 1;
+    top: 52%;
+    right: 42.5%;
 }
 
 /* REVIEWS */
@@ -488,13 +519,15 @@
 #sub {
     background-color: #459D7A;
     position: absolute;
-    width: 123px;
+    width: 125px;
     height: 50px;
     right: 0;
     border-bottom-right-radius: 8px;
     border-top-right-radius: 8px;
     padding-top: 15px;
     padding-left: 30px;
+    border: 1px solid #fff;
+    border-left: none;
 }
 
 #input_mail {
