@@ -1,0 +1,190 @@
+#wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+}
+
+#right {
+    width: 440px;
+    background-color: aqua;
+}
+
+
+/* LEFT */
+
+#left {
+    width: 90px;
+    height: 870px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#left_above {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#below {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.item {
+    width: 32px;
+    margin-top: 50px;
+}
+
+#setting {
+    margin-top: 36px;
+}
+
+.img_text {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    border-radius: 6px;
+    padding-right: 15px;
+    color: #fff;
+    background-color: #757679;
+}
+
+
+/* CENTER */
+
+#center {
+    width: 910px;
+    background-color: bisque;
+}
+
+#meeting_title {
+    display: flex;
+    justify-content: space-between;
+    /* width; */
+}
+
+#meeting_title_hour {
+    position: relative;
+    margin-top: 15px;
+    width: 90px;
+    height: 40px;
+    color: red;
+    border: 1px solid red;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.point {
+    width: 10px;
+    height: 10px;
+    margin-top: 16px;
+    background-color: red;
+    border-radius: 50%;
+    margin-left: 16px;
+}
+
+#meeting_title_hour span {
+    position: absolute;
+    top: 12px;
+    left: 32px;
+}
+
+.meeting_day_iterm1 {
+    position: relative;
+}
+
+.meeting_day_iterm1 {
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+    height: 30px;
+    color: #fff;
+    background-color: #E34D73;
+    border-radius: 25px;
+    margin-top: -3px;
+}
+
+.meeting_day_iterm1 img {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 6px;
+    left: 5px;
+}
+
+#metting_day {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    height: 30px;
+    padding-left: 0;
+}
+
+.meeting_day_iterm1 span {
+    margin-left: 19px;
+    margin-top: 5px;
+}
+
+#img_big {
+    position: relative;
+    width: 830px;
+    height: 460px;
+}
+
+#img_big img:first-child {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+#mic_color {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+}
+
+.img_big_text {
+    height: 40px;
+    width: 160px;
+}
+
+.img_big_text span {
+    margin-top: 10px;
+}
+
+#chistian {
+    position: relative;
+    width: 262px;
+    height: 162px;
+    border-radius: 6px;
+}
+
+#mic_grey {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+}
+
+.img_chistain_text {
+    width: 100px;
+    height: 30px;
+    padding-left: 20px;
+}
+
+
+/* .friends_point {
+    margin-bottom: 6px;
+} */
+
+.img_chistain_text span {}
