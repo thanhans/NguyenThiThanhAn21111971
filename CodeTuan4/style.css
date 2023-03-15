@@ -11,7 +11,6 @@
 
 #right {
     width: 440px;
-    background-color: aqua;
 }
 
 
@@ -214,11 +213,9 @@
 #bottom_center {
     display: flex;
     justify-content: center;
-    /* margin-left: 4px; */
 }
 
 #end_meeting {
-    /* margin:auto; */
     display: inline-flex;
     color: #fff;
     background-color: #F22128;
@@ -239,4 +236,73 @@
     width: 490px;
     display: flex;
     justify-content: space-between;
+}
+
+/* RIGHT */
+.container_rt {
+    margin: 36px;
+}
+
+    /* TITLE */
+
+.title_4 {
+    display: flex;
+    
+}
+
+.title_4 span {
+    margin-left: 6px;
+    margin-top: 32px;
+    color: #E34D73;
+    background-color: pink;
+    width: 20px;
+    height: 22px;
+    text-align: center;
+    border-radius: 45%;
+}
+
+#rt_add {
+    position: relative;
+    color: #E34D73;
+    border: 1px solid #E34D73;
+    width: 72px;
+    height: 37px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+#rt_add span {
+    position: absolute;
+    top: 9px;
+    left: 16px;
+}
+
+#rt_add span:last-child {
+    left: 31px;
+}
+
+.rt_title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rt_iterm {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.iterm_left span {
+    vertical-align: 12px;   
+}
+
+.rt_con {
+    margin-top: 20px;
+    height: 235px;
+}
+
+.right_top {
+    height: 335px;
+    border-bottom: 2px solid rgb(223, 232, 232);
 }
