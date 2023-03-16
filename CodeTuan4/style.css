@@ -13,6 +13,9 @@
     width: 440px;
 }
 
+.mg_left_10 {
+    margin-left: 10px;
+}
 
 /* LEFT */
 
@@ -310,6 +313,7 @@
 #back_grey {
     background-color: #e2e3e4;
     border-radius: 4px;
+    /* padding-left: 10px; */
 }
 
 #back_grey span {
@@ -320,4 +324,48 @@
 .table_one {
     width: 385px;
     height: 110px;
+}
+
+.table_one:last-child {
+    width: 200px;
+    height: 40px;
+}
+
+#add_text {
+    position: relative;
+    width: 390px;
+    height: 30px;
+    margin: 0;
+}
+
+#add_text p {
+    width: 324px;
+    height: 30px;
+    color: grey;
+    background-color: #e2e3e4e2;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+#send {
+    position: absolute;
+    top: 0px;
+    bottom: 6px;
+    right: 0;
+}
+
+.right_bottom {
+    margin-left: 37px;
+
+}
+
+#typing {
+    background-color: rgb(237, 237, 237); 
+    padding: 4px; 
+    border-radius: 4px; 
+    color: grey; 
+    width: 67px; 
+    height: 26px;
+    margin: 0;
+    margin-left: 50px;
 }
