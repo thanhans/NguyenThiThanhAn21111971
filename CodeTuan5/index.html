@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
@@ -26,44 +26,71 @@
         </div>
 
         <div class="screen">
-            <input type="text" name="" id="">
+            <input type="text" name="" id="outputScreen" >
         </div>
 
         <div class="grid-container">
-            <div class="grid-item"><button>AC</button></div>
-            <div class="grid-item"><button>+/-</button></div>
-            <div class="grid-item"><button>%</button></div>
-            <div class="grid-item"><button>&divide;</button></div>
-            <div class="grid-item"><button>7</button></div>
-            <div class="grid-item"><button>8</button></div>
-            <div class="grid-item"><button>9</button></div>
-            <div class="grid-item"><button>&times;</button></div>
-            <div class="grid-item"><button>4</button></div>
-            <div class="grid-item"><button>5</button></div>
-            <div class="grid-item"><button>6</button></div>
-            <div class="grid-item"><button>&minus;</button></div>
-            <div class="grid-item"><button>1</button></div>
-            <div class="grid-item"><button>2</button></div>
-            <div class="grid-item"><button>3</button></div>
-            <div class="grid-item"><button>&plus;</button></div>
+            <div class="grid-item" onclick="Clear()"><button>AC</button></div>
+            <div class="grid-item" onclick="del()"><button>DEL</button></div>
+            <div class="grid-item" onclick="display('%')"><button>%</button></div>
+            <div class="grid-item" onclick="display('/')"><button>&divide;</button></div>
+            <div class="grid-item" onclick="display('7')"><button>7</button></div>
+            <div class="grid-item" onclick="display('8')"><button>8</button></div>
+            <div class="grid-item" onclick="display('9')"><button>9</button></div>
+            <div class="grid-item" onclick="display('*')"><button>&times;</button></div>
+            <div class="grid-item" onclick="display('4')"><button>4</button></div>
+            <div class="grid-item" onclick="display('5')"><button>5</button></div>
+            <div class="grid-item" onclick="display('6')"><button>6</button></div>
+            <div class="grid-item" onclick="display('-')"><button>&minus;</button></div>
+            <div class="grid-item" onclick="display('1')"><button>1</button></div>
+            <div class="grid-item" onclick="display('2')"><button>2</button></div>
+            <div class="grid-item" onclick="display('3')"><button>3</button></div>
+            <div class="grid-item" onclick="display('+')"><button>&plus;</button></div>
 
         </div>
 
         <div class="grid-container2">
             <div class="grid-item"><button style="width: 175px;">0</button></div>
-            <div class="grid-item"><button>.</button></div>
-            <div class="grid-item"><button>=</button></div>
+            <div class="grid-item" onclick="display('.')"><button>.</button></div>
+            <div class="grid-item" onclick="Calculate()"><button>=</button></div>
         </div>
     </div>
 
     <script>
-        let operand1
-        let operand2
-        let opt
+        let outputScreen = document.getElementById('outputScreen')
+        let oneBtn = document.getElementById('one')
+        let twoBtn = document.getElementById('two')
+        let threeBtn = document.getElementById('three')
+        let fourBtn = document.getElementById('four')
+        let fiveBtn = document.getElementById('five')
+        let sixBtn = document.getElementById('six')
+        let sevenBtn = document.getElementById('seven')
+        let eightBtn = document.getElementById('eight')
+        let nineBtn = document.getElementById('nine')
+        let zeroBtn = document.getElementById('zero')
+        
 
-        function buttonHandler(btn) {
-
+        function display(num) {
+            outputScreen.value += num
         }
+
+        function Calculate(){
+            try {
+                outputScreen.value = eval(outputScreen.value)
+            }
+            catch (err) {
+                alert("Invalid")
+            }
+        }
+
+        function Clear() {
+            outputScreen.value = ""
+        }
+
+        function del() {
+            outputScreen.value = outputScreen.value.slice(0,-1)
+        }
+
     </script>
 </body>
 
