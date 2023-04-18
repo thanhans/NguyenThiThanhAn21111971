@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widsth=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.6.4.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: auto;
+        }
+        
+        .container {
+            width: 50%;
+            border: 1px solid blue;
+        }
+        
+        .border-radius-6 {
+            border-radius: 6px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Modal Example</h2>
+        <!-- Button to Open the Modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+          Open modal
+        </button>
+      
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+            
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Modal Heading</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              
+              <!-- Modal body -->
+              <div class="modal-body">
+                <div class="row text-center mt-4 mb-4">
+                    <div class="col-12">
+                        <h1>ĐĂNG KÝ TÀI KHOẢN</h1>
+                    </div>
+                </div>
+        
+                <div class="row mb-3">
+                    <div class="col-3 text-right">
+                        <label for="">Tên đăng nhập:</label>
+                    </div>
+        
+                    <div class="col-8">
+                        <input type="text" name="txtName" id="txtName" placeholder="Nhập vào tên đăng nhập" class="form-control">
+                    </div>
+        
+                    <div class="col-1">
+                        <span id="er1" class="text-danger">*</span>
+                    </div>
+                </div>
+        
+                <div class="row mb-3">
+                    <div class="col-3 text-right">
+                        <label for="">Mật khẩu:</label>
+                    </div>
+        
+                    <div class="col-8">
+                        <input type="password" name="txtPassword" id="txtPassword" placeholder="Nhập vào mật khẩu" class="form-control">
+                    </div>
+        
+                    <div class="col-1">
+                        <span id="er1" class="text-danger">*</span>
+                    </div>
+                </div>
+        
+                <div class="row mb-3">
+                    <div class="col-3 text-right">
+                        <label for="">Nhập lại mật khẩu:</label>
+                    </div>
+        
+                    <div class="col-8">
+                        <input type="password" name="txtPassword" id="txtPassword" placeholder="Nhập vào xác nhận  mật khẩu" class="form-control">
+                    </div>
+        
+                    <div class="col-1">
+                        <span id="er1" class="text-danger">*</span>
+                    </div>
+                </div>
+        
+                <div class="row text-center mt-4 mb-4">
+                    <div class="col-12">
+                        <h4>THÔNG TIN CÁ NHÂN</h4>
+                    </div>
+                </div>
+        
+                <div class="row mb-3">
+                    <div class="col-3 text-right">
+                        <label for="">Họ và tên:</label>
+                    </div>
+        
+                    <div class="col-8">
+                        <input type="text" name="txtName" id="txtName" placeholder="Nhập vào họ tên (bắt buộc nhập)" class="form-control">
+                    </div>
+        
+                    <div class="col-1">
+                        <span id="er1" class="text-danger">*</span>
+                    </div>
+                </div>
+        
+                <div class="row mb-3">
+                    <div class="col-3 text-right">
+                        <label for="">Ngày sinh:</label>
+                    </div>
+        
+                    <div class="col-3 text-left">
+                        <input type="text" name="txtDate" id="txtDate" placeholder="mm/dd/yyyy" class="form-control">
+                    </div>
+        
+                    <div class="col-6">
+        
+                    </div>
+                </div>
+        
+                <div class="row mb-3">
+                    <div class="col-3 text-right">
+                        <label for="">Giới tính:</label>
+                    </div>
+        
+                    <div class="col-8">
+                        <input type="radio" id="nam">
+                        <span>Nam</span>
+                        <input type="radio" id="nu">
+                        <span>Nữ</span>
+                    </div>
+        
+                    <div class="col-1">
+        
+                    </div>
+                </div>
+        
+                <div class="row mb-3">
+                    <div class="col-3 text-right">
+                        <label for="">Địa chỉ:</label>
+                    </div>
+        
+                    <div class="col-8">
+                        <input type="text" name="txtName" id="txtName" placeholder="Nhập vào địa chỉ" class="form-control">
+                    </div>
+        
+                    <div class="col-1">
+        
+                    </div>
+                </div>
+        
+                <div class="row mb-3">
+                    <div class="col-3 text-right">
+                        <label for="">Điện thoại:</label>
+                    </div>
+        
+                    <div class="col-8">
+                        <input type="text" name="txtName" id="txtName" placeholder="Nhập vào số điện thoại (9-10 số)" class="form-control">
+                    </div>
+        
+                    <div class="col-1">
+        
+                    </div>
+                </div>
+        
+                <div class="row mb-3">
+                    <div class="col-3 text-right">
+                        <label for="">Email:</label>
+                    </div>
+        
+                    <div class="col-8">
+                        <input type="text" name="txtName" id="txtName" placeholder="Nhập vào Email cá nhân theo dạng ten@tencongty.com" class="form-control">
+                    </div>
+        
+                    <div class="col-1">
+        
+                    </div>
+                </div>
+        
+                <div class="row mb-4">
+                    <div class="col-6 text-right">
+                        <button class="badge-dark border-radius-6">Đăng ký</button>
+                    </div>
+        
+                    <div class="col-6 text-left">
+                        <button class="badge-dark border-radius-6">Hủy</button>
+                    </div>
+                </div>
+              </div>
+              
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+    
+</body>
+
+</html>
