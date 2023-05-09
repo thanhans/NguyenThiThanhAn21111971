@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.6.4.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="nav m-3">
+            <button>Trang chủ</button>
+            <button class="ml-3" data-target="#myModal" data-toggle="modal">Đặt lịch</button>
+        </nav>
+        <table class="table table-bordered text-center" id="tb">
+            <tr>
+                <th>STT</th>
+                <th>Mã bệnh nhân</th>
+                <th>Mật khẩu</th>
+                <th>Ngày khám</th>
+                <th>Phụ thu dịch vụ</th>
+                <th>Chuyên khoa</th>
+            </tr>
+        </table>
+        <div class="modal" id="myModal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="">ĐẶT LỊCH KHÁM ONLINE</h1>
+                        <button data-dismiss="modal" class="close">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="row form-group">
+                                <label for="" class="col-3 text-right">Mã bệnh nhân</label>
+                                <div class="col-9">
+                                    <input type="text" class="form-control" id="txtMaBN" onblur="ktMaBN()">
+                                    <span id="erMaBN" class="text-danger">(*)</span>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label for="" class="col-3 text-right">Mật khẩu</label>
+                                <div class="col-9">
+                                    <input type="text" class="form-control" id="txtMK" onblur="ktMK()">
+                                    <span id="erMK" class="text-danger">(*)</span>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label for="" class="col-3 text-right">Ngày khám</label>
+                                <div class="col-9">
+                                    <input type="date" class="form-control" id="dateNK" name="dateNK" onblur="ktNgay()">
+                                    <span id="erNgayK" class="text-danger">(*)</span>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label for="" class="col-3 text-right">Loai dich vu</label>
+                                <div class="col-9 " id="loai">
+                                    <input type="checkbox" name="LDV">Kham benh theo yeu cau
+                                    <input type="checkbox" name="LDV">Dieu tri ngoai tru
+                                    <input type="checkbox" name="LDV">Bac si theo yeu cau
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label for="" class="col-3 text-right">Chuyen khoa</label>
+                                <div class="col-9">
+                                    <select name="" id="chuyenKhoa">
+                                        <option value="NgoaiTongQuat">Ngoai tong quat</option>
+                                        <option value="Nhi">Nhi</option>
+                                        <option value="NoiTongQuat">NoiTongQuat</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-12 text-center">
+                                    <input id="btn" type="button" value="Dat Lich" onclick="loadData()">
+                                </div>
+
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button data-dismiss="modal" class="btnClose">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            // document.getElementById('btn').onclick = function () {
+            //     var ckb = document.getElementsByName('LDV');
+            //     var t = 0;
+            //     for (var i = 0; i < ckb.length; i++) {
+            //         if (ckb[i].checked === true) {
+            //             t += 50000;
+            //         }
+            //     }
+            //     alert(t);
+            // }
+        </script>
+</body>
+
+</html>
