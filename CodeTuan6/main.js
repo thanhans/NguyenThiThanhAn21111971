@@ -34,7 +34,7 @@ function ktmk() {
     }
 }
 
-function {
+function ktdc() {
     let diachi = document.getElementById('txtAdres').value;
     let patten = /^[A-Za-z0-9]{3,}$/;
     if (patten.test(diachi)) {
