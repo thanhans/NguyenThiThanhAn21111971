@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <script src="../js/jquery-3.6.4.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../main.js"></script>
     <style>
 
         * {
@@ -17,8 +18,7 @@
         }
         
         .container {
-            width: 50%;
-            border: 1px solid blue;
+            width: 90%;
         }
         
         .border-radius-6 {
@@ -30,11 +30,26 @@
 
 <body>
     <div class="container">
-        <h2>Modal Example</h2>
-        <!-- Button to Open the Modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-          Open modal
-        </button>
+        <h2>Modal Form Dang Ki</h2>
+         <!-- Button to Open the Modal -->
+         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+            Open modal
+          </button>
+
+        <table class="table table-bordered m-3" id="tbl">
+            <tr>
+                <th>STT</th>
+                <th>Ten dang nhap</th>
+                <th>Mat khau</th>
+                <th>Ho va Ten</th>
+                <th>Ngay sinh</th>
+                <th>Gioi tinh</th>
+                <th>Dia chi</th>
+                <th>Dien thoai</th>
+                <!-- <th>Email</th> -->
+            </tr>
+        </table>
+       
       
         <!-- The Modal -->
         <div class="modal" id="myModal">
@@ -43,29 +58,27 @@
             
               <!-- Modal Header -->
               <div class="modal-header">
-                <h4 class="modal-title">Modal Heading</h4>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-              </div>
-              
-              <!-- Modal body -->
-              <div class="modal-body">
                 <div class="row text-center mt-4 mb-4">
                     <div class="col-12">
                         <h1>ĐĂNG KÝ TÀI KHOẢN</h1>
                     </div>
                 </div>
-        
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              
+              <!-- Modal body -->
+              <div class="modal-body">
                 <div class="row mb-3">
                     <div class="col-3 text-right">
                         <label for="">Tên đăng nhập:</label>
                     </div>
         
                     <div class="col-8">
-                        <input type="text" name="txtName" id="txtName" placeholder="Nhập vào tên đăng nhập" class="form-control">
+                        <input type="text" name="txtName" id="txtNameDN" placeholder="Nhập vào tên đăng nhập" class="form-control" onblur="ktNameDN()">
                     </div>
         
                     <div class="col-1">
-                        <span id="er1" class="text-danger">*</span>
+                        <span id="erNamedn" class="text-danger">*</span>
                     </div>
                 </div>
         
@@ -75,11 +88,11 @@
                     </div>
         
                     <div class="col-8">
-                        <input type="password" name="txtPassword" id="txtPassword" placeholder="Nhập vào mật khẩu" class="form-control">
+                        <input type="password" name="txtPassword" id="txtPassword" placeholder="Nhập vào mật khẩu" class="form-control" onblur="ktmk()">
                     </div>
         
                     <div class="col-1">
-                        <span id="er1" class="text-danger">*</span>
+                        <span id="erMK" class="text-danger">*</span>
                     </div>
                 </div>
         
@@ -89,11 +102,11 @@
                     </div>
         
                     <div class="col-8">
-                        <input type="password" name="txtPassword" id="txtPassword" placeholder="Nhập vào xác nhận  mật khẩu" class="form-control">
+                        <input type="password" name="txtPassword" id="txtPassword" placeholder="Nhập vào xác nhận mật khẩu" class="form-control" onblur="">
                     </div>
         
                     <div class="col-1">
-                        <span id="er1" class="text-danger">*</span>
+                        <span id="erMK" class="text-danger">*</span>
                     </div>
                 </div>
         
@@ -109,11 +122,11 @@
                     </div>
         
                     <div class="col-8">
-                        <input type="text" name="txtName" id="txtName" placeholder="Nhập vào họ tên (bắt buộc nhập)" class="form-control">
+                        <input type="text" name="txtName" id="txtName" placeholder="Nhập vào họ tên" class="form-control" onblur="kthoten()">
                     </div>
         
                     <div class="col-1">
-                        <span id="er1" class="text-danger">*</span>
+                        <span id="erName" class="text-danger">*</span>
                     </div>
                 </div>
         
@@ -122,11 +135,11 @@
                         <label for="">Ngày sinh:</label>
                     </div>
         
-                    <div class="col-3 text-left">
-                        <input type="text" name="txtDate" id="txtDate" placeholder="mm/dd/yyyy" class="form-control">
+                    <div class="col-5 text-left">
+                        <input type="date" name="txtDate" id="txtDate"class="form-control">
                     </div>
         
-                    <div class="col-6">
+                    <div class="col-4">
         
                     </div>
                 </div>
@@ -136,7 +149,7 @@
                         <label for="">Giới tính:</label>
                     </div>
         
-                    <div class="col-8">
+                    <div class="col-8" id="txtSex">
                         <input type="radio" id="nam">
                         <span>Nam</span>
                         <input type="radio" id="nu">
@@ -154,7 +167,7 @@
                     </div>
         
                     <div class="col-8">
-                        <input type="text" name="txtName" id="txtName" placeholder="Nhập vào địa chỉ" class="form-control">
+                        <input type="text" name="txtAdres" id="txtAdres" placeholder="Nhập vào địa chỉ" class="form-control" onblur="ktdiachi()">
                     </div>
         
                     <div class="col-1">
@@ -168,12 +181,13 @@
                     </div>
         
                     <div class="col-8">
-                        <input type="text" name="txtName" id="txtName" placeholder="Nhập vào số điện thoại (9-10 số)" class="form-control">
+                        <input type="text" name="txtPhone" id="txtPhone" onblur="ktdienthoai()" placeholder="Nhập vào số điện thoại (9-10 số)" class="form-control">
                     </div>
         
                     <div class="col-1">
-        
+                        
                     </div>
+                    <div id="erDT"></div>
                 </div>
         
                 <div class="row mb-3">
@@ -189,22 +203,19 @@
         
                     </div>
                 </div>
-        
+                
+                <!-- Modal footer -->
                 <div class="row mb-4">
                     <div class="col-6 text-right">
-                        <button class="badge-dark border-radius-6">Đăng ký</button>
+                        <button class="badge-dark border-radius-6" onclick="ketqua()">Đăng ký</button>
                     </div>
-        
-                    <div class="col-6 text-left">
-                        <button class="badge-dark border-radius-6">Hủy</button>
+                    
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                     </div>
                 </div>
-              </div>
+            </div>
               
-              <!-- Modal footer -->
-              <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-              </div>
               
             </div>
           </div>
